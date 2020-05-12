@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>360卫士</title>
+  <script> (function flexible(window, document) { var docEl = document.documentElement; var dpr = window.devicePixelRatio || 1; function setBodyFontSize() { if (document.body) { document.body.style.fontSize = 12 * dpr + "px"; } else { document.addEventListener("DOMContentLoaded", setBodyFontSize); } } setBodyFontSize(); function setRemUnit() { var rem = docEl.clientWidth / 10; docEl.style.fontSize = rem + "px"; } setRemUnit(); window.addEventListener("resize", setRemUnit); window.addEventListener("pageshow", function (e) { if (e.persisted) { setRemUnit(); } }); if (dpr >= 2) { var fakeBody = document.createElement("body"); var testElement = document.createElement("div"); testElement.style.border = ".5px solid transparent"; fakeBody.appendChild(testElement); docEl.appendChild(fakeBody); if (testElement.offsetHeight === 1) { docEl.classList.add("hairlines"); } docEl.removeChild(fakeBody); } })(window, document); </script>
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <div class="view">
+
+    <header class="index_header">
+      <a href="#" class="logo">
+        <img src="./imgs/logo.png" alt="">
+      </a>
+      <a href="#" class="header_menu">
+        <img src="./imgs/menu.png" alt="">
+      </a>
+    </header>
+    <div class="index_swiper_row swiper-container">
+      <div class="main_menu hidden">
+        <a href="#" class="menu_item">智能硬件</a>
+        <a href="#" class="menu_item">用户服务</a>
+        <a href="#" class="menu_item">用户服务</a>
+        <a href="#" class="menu_item">企业服务</a>
+        <a href="#" class="menu_item">360商城</a>
+        <a href="#" class="menu_item">手机游戏</a>
+        <a href="#" class="menu_item">论坛</a>
+        <a href="#" class="menu_item">社会招聘</a>
+        <a href="#" class="menu_item">校园招聘</a>
+      </div>
+      <div class="index_swiper swiper-wrapper">
+        <a href="#" class="swiper_item swiper-slide"> <img src="./imgs/banner1.png" alt=""> </a>
+        <a href="#" class="swiper_item swiper-slide"> <img src="./imgs/banner2.png" alt=""> </a>
+        <a href="#" class="swiper_item swiper-slide"> <img src="./imgs/banner3.png" alt=""> </a>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <nav class="index_nav">
+      <a href="#"><img src="./imgs/nav1.png" alt="">全部产品</a>
+      <a href="#"><img src="./imgs/nav2.png" alt="">360搜素</a>
+      <a href="#"><img src="./imgs/nav3.png" alt="">360商城</a>
+      <a href="#"><img src="./imgs/nav4.png" alt="">360游戏</a>
+    </nav>
+    <div class="line"></div>
+    <div class="phone_software">
+      <div class="phone_software_title">手机软件</div>
+      <div class="phone_software_content">
+        <a href="#" class="software_item"><img src="./imgs/software1.png" alt="">
+          <div class="software_name">手机卫士</div>
+          <div class="softsize">8.95M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"><img src="./imgs/software2.png" alt="">
+          <div class="software_name">手机助手</div>
+          <div class="softsize">6.5M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"><img src="./imgs/software3.png" alt="">
+          <div class="software_name">浏览器</div>
+          <div class="softsize">23.16M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"><img src="./imgs/software4.png" alt="">
+          <div class="software_name">清理大师</div>
+          <div class="softsize">5.8M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"> <img src="./imgs/software5.png" alt="">
+          <div class="software_name">影视大全</div>
+          <div class="softsize">20.7M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"> <img src="./imgs/software6.png" alt="">
+          <div class="software_name">省电王</div>
+          <div class="softsize">2.8M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"> <img src="./imgs/software7.png" alt="">
+          <div class="software_name">免费WIFI</div>
+          <div class="softsize">3.8M</div>
+          <div class="softdownload">下载</div>
+        </a>
+        <a href="#" class="software_item"> <img src="./imgs/software8.png" alt="">
+          <div class="software_name">ROOT</div>
+          <div class="softsize">4.8M</div>
+          <div class="softdownload">下载</div>
+        </a>
+      </div>
+      <div class="phone_software_others">
+        <ul class="text-ul">
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_1.png" alt="">
+                  360搜索
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_2.png" alt="">
+                  会员商城
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_3.png" alt="">
+                  手机专家
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_4.png" alt="">
+                  流量卫士
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_5.png" alt="">
+                  360天气
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_6.png" alt="">
+                  360金融
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_7.png" alt="">
+                  360借条
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_8.png" alt="">
+                  信用卫士
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_9.png" alt="">
+                  贷款神器
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <div>
+                <a href="#">
+                  <img src="./imgs/soft_icon_10.png" alt="">
+                  安全客
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="hardware">
+      <div class="hardware_title">智能硬件</div>
+      <div class="hardware_content">
+        <ul>
+          <li> <a href="#" class="hardware_item">
+              <div class="hardware_name">360家庭防火墙路由器5S</div>
+              <div class="hardware_des">为家守护的黑科技路由</div>
+              <div class="hardware_price">199元</div> <img src="./imgs/hardware1.png" alt="">
+            </a></li>
+          <li>
+            <a href="#" class="hardware_item">
+              <div class="hardware_name">360AI音箱MAX－M1</div>
+              <div class="hardware_des">澎湃音质 双重智能</div>
+              <div class="hardware_price">199元</div> <img src="./imgs/hardware2.png" alt="">
+            </a></li>
+          <li>
+
+            <a href="#" class="hardware_item">
+              <div class="hardware_name">360可视门铃</div>
+              <div class="hardware_des">家庭安全的最佳守门员</div>
+              <div class="hardware_price">349元</div> <img src="./imgs/hardware3.png" alt="">
+            </a></li>
+          <li> <a href="#" class="hardware_item">
+              <div class="hardware_name">360扫地机器人S7</div>
+              <div class="hardware_des">扫拖一体 AI智能新升级</div>
+              <div class="hardware_price">1799元</div> <img src="./imgs/hardware4.png" alt="">
+            </a></li>
+          <li> <a href="#" class="hardware_item">
+              <div class="hardware_name">360儿童安全座椅智能头等舱</div>
+              <div class="hardware_des">适合约9个月—12岁宝宝</div>
+              <div class="hardware_price">1980元</div> <img src="./imgs/hardware5.png" alt="">
+            </a></li>
+          <li> <a href="#" class="hardware_item">
+              <div class="hardware_name">360儿童手表8X</div>
+              <div class="hardware_des">超强续航的4G视频电话手表</div>
+              <div class="hardware_price">399元</div> <img src="./imgs/hardware6.png" alt="">
+            </a></li>
+          <li> <a href="#" class="hardware_item">
+              <img src="./imgs/hardware_more.png" alt="">
+            </a></li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="user_service others_service ">
+      <div class="user_service_title others_service_title">用户服务</div>
+      <div class="user_service_content others_service_content">
+        <a href="#" class="user_service_item others_service_item">360搜索</a>
+        <a href="#" class="user_service_item others_service_item">360导航</a>
+        <a href="#" class="user_service_item others_service_item">360金融</a>
+        <a href="#" class="user_service_item others_service_item">360新闻</a>
+        <a href="#" class="user_service_item others_service_item">360影视</a>
+        <a href="#" class="user_service_item others_service_item">360贷款神器</a>
+        <a href="#" class="user_service_item others_service_item">360信用卫士</a>
+        <a href="#" class="user_service_item others_service_item">安全客</a>
+        <a href="#" class="user_service_item others_service_item">安全教育</a>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="company_service others_service ">
+      <div class="company_service_title others_service_title">企业安全</div>
+      <div class="company_service_content others_service_content">
+        <a href="#" class="company_service_item others_service_item">大数据安全</a>
+        <a href="#" class="company_service_item others_service_item">边界安全</a>
+        <a href="#" class="company_service_item others_service_item">终端安全</a>
+        <a href="#" class="company_service_item others_service_item">内容安全</a>
+        <a href="#" class="company_service_item others_service_item">网站安全</a>
+        <a href="#" class="company_service_item others_service_item">移动安全</a>
+        <a href="#" class="company_service_item others_service_item">云安全</a>
+        <a href="#" class="company_service_item others_service_item">无线安全</a>
+        <a href="#" class="company_service_item others_service_item">代码安全</a>
+        <a href="#" class="company_service_item others_service_item">工业安全</a>
+        <a href="#" class="company_service_item others_service_item">攻防实训</a>
+      </div>
+    </div>
+
+    <div class="btm_search">
+      <div class="search_wrap">
+        <input type="search" placeholder="搜一下">
+      </div>
+      <button class="btn_search">搜一下</button>
+    </div>
+
+    <div class="index_links">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">电脑版</a>
+      <a href="#">会员商城</a>
+    </div>
+    <div class="copy_right">
+      © 360.com 奇虎360 京ICP备08010314号-6
+    </div>
+  </div>
+</body>
+<script src="./lib/swiper/js/swiper.min.js"></script>
+<script>
+  window.onload = function () {
+    init();
+    function init() {
+      initSwiper();
+      eventList();
+    }
+    function eventList() {
+      document.querySelector(".header_menu").onclick = function () {
+        document.querySelector(".main_menu").classList.toggle("hidden");
+      }
+
+    }
+    function initSwiper() {
+      var mySwiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination'
+        },
+        autoplay: {
+          disableOnInteraction: false
+        }
+      })
+    }
+  }
+</script>
+
+</html>

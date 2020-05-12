@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+.hidden {
+  display: none!important;
+}
+/* 主题颜色 */
+.view {
+  font-size: 0.4375rem;
+  color: #666;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}

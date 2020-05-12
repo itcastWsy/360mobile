@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+.hidden {
+  display: none!important;
+}
+/* 主题颜色 */
+.view {
+  font-size: 0.4375rem;
+  color: #666;
+}
+input,
+button {
+  border: none;
+  outline: none;
+}
+.index_header {
+  background-color: #0094ff;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.index_header .logo {
+  width: 81px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index_header .header_menu {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index_swiper_row {
+  position: relative;
+}
+.index_swiper_row .main_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.625rem;
+}
+.index_swiper_row .main_menu .menu_item {
+  border: 0.03125rem solid currentColor;
+  text-align: center;
+  width: 30%;
+  margin: 1%;
+  padding: 0.15625rem;
+}
+.line {
+  background-color: #ccc;
+  height: 0.3125rem;
+}
+.index_nav {
+  display: flex;
+  padding: 0.46875rem 0;
+}
+.index_nav a {
+  flex: 1;
+  padding: 0.25rem 0;
+  border-right: 0.03125rem solid #ccc;
+  text-align: center;
+}
+.index_nav a img {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 0.15625rem;
+}
+.index_nav a:last-child {
+  border-right: none;
+}
+.phone_software .phone_software_title {
+  padding: 0.3125rem;
+  font-size: 0.9375rem;
+  color: #0094ff;
+  border-bottom: 0.03125rem dashed currentColor;
+}
+.phone_software .phone_software_content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3125rem;
+}
+.phone_software .phone_software_content .software_item {
+  margin-bottom: 0.625rem;
+  width: 25%;
+  text-align: center;
+}
+.phone_software .phone_software_content .software_item img {
+  width: 60%;
+  display: inline-block;
+}
+.phone_software .phone_software_content .software_item .softsize {
+  color: #ccc;
+  padding: 0.15625rem 0;
+}
+.phone_software .phone_software_content .software_item .softdownload {
+  background-color: #def3e1;
+  color: #0094ff;
+  display: inline-block;
+  padding: 0.09375rem 0.25rem;
+  border-radius: 40%;
+}
+.phone_software .phone_software_others .text-ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.phone_software .phone_software_others .text-ul li {
+  margin: 0.15625rem 1%;
+  border: 0.03125rem solid #0094ff;
+  width: 23%;
+  background-color: #f8f8f8;
+}
+.phone_software .phone_software_others .text-ul li .box a {
+  font-size: 0.375rem;
+  text-align: center;
+  padding: 0.3125rem 0;
+}
+.phone_software .phone_software_others .text-ul li .box a img {
+  width: 15%;
+  display: inline-block;
+}
+.hardware .hardware_title {
+  padding: 0.3125rem;
+  font-size: 0.9375rem;
+  color: #0094ff;
+  border-bottom: 0.03125rem dashed currentColor;
+}
+.hardware .hardware_content ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hardware .hardware_content ul li {
+  width: 50%;
+  border-bottom: 0.03125rem solid #0094ff;
+}
+.hardware .hardware_content ul li .hardware_item {
+  padding: 0.3125rem;
+}
+.hardware .hardware_content ul li .hardware_item .hardware_name {
+  font-size: 0.5rem;
+  color: #000;
+  margin-bottom: 0.125rem;
+}
+.hardware .hardware_content ul li .hardware_item .hardware_des {
+  color: #0094ff;
+}
+.hardware .hardware_content ul li .hardware_item .hardware_price {
+  color: red;
+}
+.hardware .hardware_content ul li:nth-child(odd) {
+  border-right: 0.03125rem solid #0094ff;
+}
+.hardware .hardware_content ul li:last-child {
+  width: 100%;
+  border-right: none;
+}
+.others_service .others_service_title {
+  padding: 0.46875rem;
+  font-size: 0.9375rem;
+  color: #0094ff;
+}
+.others_service .others_service_content {
+  justify-content: flex-start;
+  padding: 0.3125rem;
+}
+.others_service .others_service_content .others_service_item {
+  display: inline-block;
+  margin-bottom: 0.1875rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 32%;
+  background-color: #f8f8f8;
+  border: 0.03125rem solid #eee;
+  font-size: 0.5rem;
+  color: #0094ff;
+  padding: 0.375rem 0;
+  text-align: center;
+}
+.btm_search {
+  padding: 0.625rem;
+  display: flex;
+  height: 2.65625rem;
+}
+.btm_search .search_wrap {
+  flex: 4;
+  height: 100%;
+  border: 0.03125rem solid #0094ff;
+  position: relative;
+}
+.btm_search .search_wrap::before {
+  content: "";
+  background-image: url(../imgs/nav2.png);
+  position: absolute;
+  right: 0.3125rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-size: 100% 100%;
+}
+.btm_search .search_wrap input {
+  width: 100%;
+  height: 100%;
+  text-indent: 0.3125rem;
+}
+.btm_search .btn_search {
+  flex: 1;
+  background-color: #0094ff;
+  color: #fff;
+}
+.index_links {
+  display: flex;
+  justify-content: center;
+  padding: 0.625rem 0;
+  font-size: 0.5rem;
+}
+.index_links a {
+  padding: 0 0.3125rem;
+  color: #000;
+  border-right: 0.03125rem solid currentColor;
+}
+.index_links a:last-child {
+  border-right: none;
+}
+.copy_right {
+  text-align: center;
+  padding: 0.625rem 0;
+  color: #000;
+  background-color: #f6f6f6;
+}
